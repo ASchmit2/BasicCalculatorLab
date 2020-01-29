@@ -13,7 +13,7 @@ namespace BasicCalculator
 
             Console.WriteLine("Enter relative humidity.");
             int humid = int.Parse(Console.ReadLine());
-            decimal dewpoint = temp - (9 * (100 - humid) / 25);
+            double dewpoint = temp - (9 * (100 - humid) / 25);
             
             Console.WriteLine("The dewpoint is " + dewpoint);
 
